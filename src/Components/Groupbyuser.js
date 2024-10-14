@@ -111,9 +111,10 @@ const User = () => {
 
   if (isLoading) {
     return (
-      <div className="loader-container ">
-        <div className="loader"></div>
-      </div>
+      <div class="loader-container">
+  <div class="loader"></div>
+</div>
+
     );
   }
 
