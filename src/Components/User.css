@@ -1,0 +1,119 @@
+/* Container for all user cards */
+.users-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+}
+
+/* Individual user card */
+.dashContainer {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1.5%;
+    padding-top: 3%;
+    
+    flex-wrap: wrap;
+    background-color: #f4f5f8;
+    background-position: fill;
+    min-height: 100vh;
+  }
+  
+  
+  .dashCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    align-content: center;
+    gap: 5px;
+  }
+  
+  .dashCardHeading {
+    display: flex;
+    justify-content: space-between;
+  }
+  .totalcountcards {
+    padding-left: 10px;
+    color: #5b5b5b;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 1200px) {
+    .dashCardContainer {
+      width: 30%;
+      /* Adjust the width based on your design */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dashCardContainer {
+      width: 45%;
+      /* Adjust the width based on your design */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .dashCardContainer {
+      width: 100%;
+      /* Full width on smaller screens */
+    }
+  
+    .dashCardHeading {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+/* User information section */
+
+
+/* Tickets section within a user card */
+.tickets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container{
+    background-color: #f4f5f8;
+    height:100vh;
+}
+
+.ticket-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    height: 120px;
+    position: relative; /* To enable positioning of the image */
+    padding: 10px;
+}
+
+h3 {
+    font-size: medium;
+}
+
+/* Style for the image inside the ticket card */
+.t-img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover;
+}
+
+.ticket-imgdiv {
+    display: flex;
+ 
+}
+
+.ticket-title {
+    margin: 0; /* Remove default margin */
+}
+
+p {
+    margin-top: 5px;
+}
