@@ -1,11 +1,11 @@
-/* Container for all user cards */
+
 .users-container {
     display: flex;
     flex-direction: row; 
     gap: 20px;
 }
 
-/* Individual user card */
+
 .dashContainer {
     display: flex;
     align-items: flex-start;
@@ -39,25 +39,25 @@
     color: #5b5b5b;
   }
   
-  /* Responsive styles */
+
   @media screen and (max-width: 1200px) {
     .dashCardContainer {
       width: 30%;
-      /* Adjust the width based on your design */
+      
     }
   }
   
   @media screen and (max-width: 768px) {
     .dashCardContainer {
       width: 45%;
-      /* Adjust the width based on your design */
+     
     }
   }
   
   @media screen and (max-width: 480px) {
     .dashCardContainer {
       width: 100%;
-      /* Full width on smaller screens */
+
     }
   
     .dashCardHeading {
@@ -66,10 +66,8 @@
     }
   }
 
-/* User information section */
 
 
-/* Tickets section within a user card */
 .tickets-container {
     display: flex;
     flex-direction: column;
@@ -86,7 +84,7 @@
     border-radius: 10px;
     width: 250px;
     height: 120px;
-    position: relative; /* To enable positioning of the image */
+    position: relative; 
     padding: 10px;
 }
 
@@ -94,14 +92,14 @@ h3 {
     font-size: medium;
 }
 
-/* Style for the image inside the ticket card */
+
 .t-img {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 40px; /* Adjust the size as needed */
+    width: 40px; 
     height: 40px;
-    border-radius: 50%; /* Makes the image a circle */
+    border-radius: 50%; 
     object-fit: cover;
 }
 
@@ -111,7 +109,7 @@ h3 {
 }
 
 .ticket-title {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 p {

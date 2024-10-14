@@ -4,7 +4,7 @@ import './Navbar.css'
 const NavBar = () => {
   const [displayOnClick, setDisplayOnClick] = useState(false);
   const {navdata,setNavdata}=useContext(UserContext);
-  console.log(navdata);
+  
   const selectedGroup = Object.keys(navdata.group).find(
     key => navdata.group[key] && key !== 'flag' && key !== 'name'
   ) || '';
@@ -15,7 +15,7 @@ const NavBar = () => {
       
         setDisplayOnClick(!displayOnClick);
         const newchange=e.target.value;
-        console.log(newchange)
+      
         setNavdata({
             ...navdata,
             group:{
@@ -31,7 +31,7 @@ const NavBar = () => {
       
     setDisplayOnClick(!displayOnClick);
     const newchange=e.target.value;
-    console.log(newchange)
+   
     setNavdata({
         ...navdata,
         order:{
@@ -44,7 +44,7 @@ const NavBar = () => {
     })
 }
  useEffect(()=>{
-    console.log(navdata)
+ 
  },[navdata])
 
 

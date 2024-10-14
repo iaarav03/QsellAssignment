@@ -40,6 +40,6 @@
 @media only screen and (max-width: 768px) {
   .flex-gap-10 {
     padding: 0 10px;
-    /* Adjust padding for smaller screens */
+   
   }
 }

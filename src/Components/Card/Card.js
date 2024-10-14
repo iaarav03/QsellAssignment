@@ -16,11 +16,11 @@ import {
 
 }  from "../Icons";
 const Card = ({ id, title, tag, status, priority,type }) => {
-    console.log("priority",priority);
+
   const isStatus = type === "status";
   const isPriority = type === "priority";
   const isUser=type==="user";
-//   console.log(type);
+
   const statusOrder = ['Backlog', 'Todo', 'In progress', 'Done'];
   const getStatusIndex = (status) => {
     return statusOrder.indexOf(status);
