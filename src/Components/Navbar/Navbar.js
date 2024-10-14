@@ -1,6 +1,6 @@
 import React, { useEffect, useState ,useContext} from "react";
 import UserContext from "../../utils/UseContext";
-import './NavBar.css'
+import './Navbar.css'
 const NavBar = () => {
   const [displayOnClick, setDisplayOnClick] = useState(false);
   const {navdata,setNavdata}=useContext(UserContext);
